@@ -13,6 +13,7 @@ const app = new Vue(
       this.email();
     },
     methods: {
+      // creo la funzione per generare le emails
       email: function () {
         for (let index = 0; index < 10; index++) {
           axios.get("https://flynn.boolean.careers/exercises/api/random/mail")
